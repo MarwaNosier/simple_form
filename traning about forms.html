@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>create form</title>
+	<style>
+	    body{ font-family: Arial,Tahoma ,color: #8b2f97;
+			background-color : #EEEEEE }
+		fieldset{
+			background:#FFF; 
+			border: 1px solid:#CCC; 
+			padding: 20px ;
+			margin-bottom: 20px; 
+			width:500px;
+			margin: 20px auto
+		} 
+		legend
+		{
+			background: #FFF;
+			border: 1px solid:#CCC;
+			padding: 10px
+		}
+
+		label{margin-bottom: 10px;display: block;}
+		input{margin-bottom: 10px}
+
+		input[type="text"],
+		input[type="password"],
+		textarea
+		{
+			padding: 8px;
+			display:block
+		}
+		hr {border: 1px solid #EEE}
+		textarea
+		{
+			padding: 10px;
+			width: 400px;
+			height: 200px
+		}
+
+		header
+        {
+			display: flex;
+			justify-content: space-around;
+			height: 100px;
+			align-items: center;
+		}
+
+		ul
+		{
+			list-style: none;
+		}
+		li
+		{
+			display: inline;
+			margin-left: 20px;
+		}
+		a
+		{
+			text-decoration: none;
+			text-transform: uppercase;
+			color: #8b2f97;
+			font-size: 20px;
+
+		}
+		a:hover{
+	       border-bottom:3px solid;
+	      padding: 20px;
+}
+
+	</style>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">join</a></li>
+			<li><a href="#">log in</a></li>
+		</ul>
+	</header>
+
+	<form name="register">
+		<fieldset>
+			<legend>Personal Information</legend>
+			<label>User name</label>
+			<input type="text" name="user name">
+			<label>password</label>
+			<input type="password" name="password">
+			<label>E-mail</label>
+			<input type="text" name="email">
+			<label>Gender</label>
+			<select>
+				<option value="female">female</option>
+				<option value="Male">Male</option>
+			</select>
+
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Favourites</legend>
+			<label>your favourite editor</label>
+			<input type="radio" name="editor">Komodo<br>
+			<input type="radio" name="editor">Netbeans<br>
+			<input type="radio" name="editor">Sublime
+			<hr>
+			<label>your favourite browser</label>
+			<input type="radio" name="browser">chrome<br>
+			<input type="radio" name="browser">firfox<br>
+			<input type="radio" name="browser">opera
+			<hr>
+			<label>your favourite Operating system</label>
+			<input type="radio" name="os">Mac OSX <br>
+			<input type="radio" name="os">Linux<br>
+			<input type="radio" name="os">Windows
+		</fieldset>
+
+		<fieldset>
+			<legend>Your Massage</legend>
+			<textarea></textarea>
+			<input type="submit" value="Send Your Data">
+		</fieldset>
+
+		
+
+	</form>
+
+</body>
+</html>
